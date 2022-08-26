@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    overflow: hidden;
+}#left{
+    position: relative;
+    height: 100%;
+    width: 60%;
+    background-color: #CFC4B6;
+}
+#nav{
+    animation-name: nav;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.5s;
+
+}
+#left>#nav{
+    height: 45px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}#nav>#part2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+#nav>#part2>h3{
+    font-weight: 300;
+    font-family: Gilory;
+    opacity: 0.7;
+}#left>#nav>h2{
+    font-weight: 600;
+    font-family: Gilory;
+}#nav>i{
+    font-size: 20px;
+}
+#left-content{
+    position: relative;
+    width: 30%;
+    left: 16%;
+    top: 20%;
+    animation-name: text;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.5s;
+
+
+}#left-content>h1{
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 63px;
+    margin-bottom: 30px;
+}#left-content>p{
+    font-weight: 400;
+    font-family: Gilory;
+    font-size: 14px;
+    margin-bottom: 23px;
+}#left-content>button{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid black;
+    padding: 6px 4px ;
+}#left-content>i{
+    margin-left: 10px;
+}
+
+#right{
+    height: 100%;
+    position: relative;
+    width: 40%;
+    background-color: #DD6031;
+    animation-name: rbgcolor;
+    animation-duration: 4s;
+    animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    animation-delay: 0.5s;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes rbgcolor {
+    0%{
+        transform: translate(100%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+    
+}
+
+@keyframes text {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(4%);
+    }
+    
+}
+
+@keyframes nav {
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(30%);
+
+    }
+    
+}
+
